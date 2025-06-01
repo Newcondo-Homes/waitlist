@@ -89,7 +89,7 @@ export default function FeaturesSection() {
                         <Card className="relative col-span-full overflow-hidden sm:col-span-3 lg:col-span-2">
                             <CardContent className="pt-6">
                                 <div className="pt-6 lg:px-6 flex justify-center">
-                                    <div className="relative items-center flex aspect-square size-20 rounded-full border before:absolute before:-inset-2 before:rounded-full before:border dark:border-white/10 dark:before:border-white/5">
+                                    <div className="relative items-center flex aspect-square size-28 rounded-full border before:absolute before:-inset-2 before:rounded-full before:border dark:border-white/10 dark:before:border-white/5">
                                         <TabletSmartphone
                                             className="m-auto size-14"
                                             strokeWidth={1}
