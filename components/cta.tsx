@@ -37,7 +37,7 @@ export default function CTA() {
       <motion.div variants={itemVariants}>
         <TextBlur
           className="mx-auto max-w-[27rem] pt-1.5 text-center text-base text-zinc-300 sm:text-lg"
-          text="Join the Newcondo waitlist to be amongst the first to try a smarter way to rent and lease properties — without double bookings or miscommunication."
+          text="Join the Newcondo waitlist and be among the first to try smarter, hassle-free renting."
           duration={0.8}
         />
       </motion.div>

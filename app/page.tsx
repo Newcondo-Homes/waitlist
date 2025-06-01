@@ -5,6 +5,7 @@ import { useState } from "react";
 import CTA from "@/components/cta";
 import Form from "@/components/form";
 import Logos from "@/components/logos";
+import Features from "@/components/features-8"; // or adjust path based on actual filename
 import Particles from "@/components/ui/particles";
 import Header from "@/components/header";
 import Footer from "@/components/footer";
@@ -120,13 +121,17 @@ export default function Home() {
           loading={loading}
         />
 
-        <Logos />
+        {/* <Logos > */}
       </section>
 
       <section
         id="why-us"
         className="w-full max-w-4xl px-6 py-12 text-center scroll-mt-28"
-      ></section>
+      >
+
+        <Features />
+
+      </section>
       <Footer />
 
       <Particles

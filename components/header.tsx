@@ -18,12 +18,12 @@ export default function Header() {
             size="sm"
             variant="secondary"
             className="text-yellow-50 transition-all duration-150 ease-linear md:hover:text-yellow-200">
-            <span className="hidden md:inline">Newcondo</span>
+            <span>Newcondo</span>
           </Button>
         </Link>
       </motion.div>
       <motion.div variants={itemVariants}>
-        <Link href="#why-us" rel="noopener noreferrer" target="_blank">
+        <Link href="#why-us">
           <Button
             size="sm"
             variant="secondary"
