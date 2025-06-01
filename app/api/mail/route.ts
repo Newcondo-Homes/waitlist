@@ -2,12 +2,11 @@ import { render } from "@react-email/render";
 
 import WelcomeTemplate from "../../../emails";
 
-import { Resend } from "resend";
+// import { Resend } from "resend";
 import { NextRequest, NextResponse } from "next/server";
 import { Redis } from "@upstash/redis";
 import { Ratelimit } from "@upstash/ratelimit";
-
-const resend = new Resend(process.env.RESEND_API_KEY);
+import { sendEmailWithMailgun } from "@/lib/mailgun";
 
 const redis = new Redis({
   url: process.env.UPSTASH_REDIS_REST_URL,
@@ -38,23 +37,24 @@ export async function POST(request: NextRequest, response: NextResponse) {
 
   const { email, firstname } = await request.json();
 
-  const { data, error } = await resend.emails.send({
-    from: "Lakshay<hello@waitlist.lakshb.dev>",
-    to: [email],
-    subject: "Thankyou for wailisting the Next.js + Notion CMS template!",
-    reply_to: "lakshb.work@gmail.com",
-    html:  await render(WelcomeTemplate({ userFirstname: firstname })),
-  });
+  const html = await render(WelcomeTemplate({ userFirstname: firstname }));
 
-  // const { data, error } = { data: true, error: null }
+  try {
+    const sendResult = await sendEmailWithMailgun({
+      to: email,
+      subject: "Thank you for joining Newcondo waitlist!",
+      html,
+    });
 
-  if (error) {
-    return NextResponse.json(error);
+    if (!sendResult.success) {
+      return NextResponse.json({ message: "Failed to send email" }, { status: 500 });
+    }
+
+    return NextResponse.json({ message: "Email sent successfully" });
+  } catch (error) {
+    console.error(error);
+      console.log("error overall");
+
+    return NextResponse.json({ message: "Internal server error" }, { status: 500 });
   }
-
-  if (!data) {
-    return NextResponse.json({ message: "Failed to send email" });
-  }
-
-  return NextResponse.json({ message: "Email sent successfully" });
 }
