@@ -123,6 +123,10 @@ export default function Home() {
         <Logos />
       </section>
 
+      <section
+        id="why-us"
+        className="w-full max-w-4xl px-6 py-12 text-center scroll-mt-28"
+      ></section>
       <Footer />
 
       <Particles
