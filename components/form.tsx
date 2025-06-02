@@ -36,6 +36,7 @@ export default function Form({
           placeholder="Your Name"
           value={name}
           onChange={handleNameChange}
+          className="bg-[#131313]"
         />
       </motion.div>
       <motion.div variants={itemVariants}>
@@ -44,6 +45,7 @@ export default function Form({
           placeholder="Your Email Address"
           value={email}
           onChange={handleEmailChange}
+          className="bg-[#131313]"
         />
       </motion.div>
       <motion.div variants={itemVariants}>

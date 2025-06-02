@@ -9,7 +9,7 @@ export default function Footer() {
       variants={containerVariants}
       initial="hidden"
       animate="visible"
-      className="mt-auto flex w-full items-center justify-center gap-1 border-t bg-background p-6 text-muted-foreground md:justify-start">
+      className="mt-auto flex w-full items-center justify-center gap-1 border-t bg-[#131313] bg-background p-6 text-muted-foreground">
       <motion.div variants={itemVariants} className="flex items-center gap-2">
         <MdEmail className="text-xl text-zinc-300" />
         <Link
