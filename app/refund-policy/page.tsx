@@ -26,7 +26,7 @@ export default function RefundPolicy() {
               1. Scope & Legally Binding Agreement
             </h2>
             <p className="text-gray-300 leading-relaxed mb-4">
-              This Cancellation and Refund Policy (&quot;Policy&quot;) governs all monetary transactions and user engagements on the NewCondo platform (&quot;Newcondo&quot;), including but not limited to rental payments, commission disbursements, third-party service payments, subscription fees, listing fees, and transaction processing costs.
+              This Cancellation and Refund Policy (&quot;Policy&quot;) governs all monetary transactions and user engagements on the Newcondo platform (&quot;Newcondo&quot;), including but not limited to rental payments, commission disbursements, third-party service payments, subscription fees, listing fees, and transaction processing costs.
             </p>
             <p className="text-gray-300 leading-relaxed mb-4">
               By using the Newcondo platform, users (Renters, Property Owners, Agents, and Third-Party Service Providers) expressly agree to the terms of this Policy, including:
