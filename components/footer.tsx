@@ -97,7 +97,7 @@ export default function Footer() {
           </div>
         </motion.div>
          
-        <motion.div variants={itemVariants} className="flex items-center gap-2'>
+        <motion.div variants={itemVariants} className="flex items-center gap-2">
           <div className="flex space-x-2">
             <div
               
