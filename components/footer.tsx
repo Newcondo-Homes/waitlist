@@ -96,6 +96,23 @@ export default function Footer() {
             </Link>
           </div>
         </motion.div>
+         
+        <motion.div variants={itemVariants} className="flex items-center gap-2">
+         // <FaShieldAlt className="text-xl text-zinc-300" />
+          <div className="flex space-x-2">
+            <div
+              
+              className="text-zinc-300 underline underline-offset-2 transition-all duration-200 ease-linear hover:text-yellow-200">
+              08108315350 {"|"} 09032263552
+            </div>
+            <div>{"|"}</div>
+            <div
+             
+              className="text-zinc-300 underline underline-offset-2 transition-all duration-200 ease-linear hover:text-yellow-200">
+              6 Blessing Val Street, Umuagu Umuguma, Owerri-West, Imo State, Nigeria
+            </div>
+          </div>
+        </motion.div>
       </div>
     </motion.div>
   );
