@@ -107,7 +107,7 @@ export default function Footer() {
             <div>{"|"}</div>
             <div
              
-              className="text-zinc-300 underline underline-offset-2 transition-all duration-200 ease-linear hover:text-yellow-200">
+              className="text-zinc-300 text-xs underline underline-offset-2 transition-all duration-200 ease-linear hover:text-yellow-200">
               6 Blessing Val Street, Umuagu Umuguma, Owerri-West, Imo State, Nigeria
             </div>
           </div>
