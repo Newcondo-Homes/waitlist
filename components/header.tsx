@@ -5,7 +5,6 @@ import { FaStar  } from "react-icons/fa6";
 
 import { containerVariants, itemVariants } from "@/lib/animation-variants";
 
-
 export default function Header() {
   return (
     <motion.div
